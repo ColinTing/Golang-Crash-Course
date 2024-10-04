@@ -5,24 +5,24 @@ import "fmt"
 func main() {
 	ids := []int{33, 76, 54, 23, 11, 2}
 
-	// Loop through ids
+	// 循环ids
 	for i, id := range ids {
 		fmt.Printf("%d - ID: %d\n", i, id)
 	}
 
-	// Not using index
+	// 不使用索引
 	for _, id := range ids {
 		fmt.Printf("ID: %d\n", id)
 	}
 
-	// Add ids together
+	// 累加ids
 	sum := 0
 	for _, id := range ids {
 		sum += id
 	}
 	fmt.Println("Sum", sum)
 
-	// Range with map
+	// 迭代map
 	emails := map[string]string{"Colin": "colinting@gmail.com", "John": "john@gmail.com"}
 
 	for k, v := range emails {
